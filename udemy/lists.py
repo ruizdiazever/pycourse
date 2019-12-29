@@ -23,7 +23,7 @@ letters[:3] = ['A','B','C']
 print("Letras: ", letters)
 
 # VACIAR LISTA
-letters_2 = letters
+letters_2 = letters # Aca referenciamos (NO SE CLONA)
 letters_2[:3] = []
 print("Lista vaciada: ", letters_2)
 
