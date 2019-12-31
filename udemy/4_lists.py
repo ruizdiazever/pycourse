@@ -1,3 +1,5 @@
+# Las cadenas tienen una propiedad llamada inmutabilidad. 
+
 number = [1,2,3,4]
 datos = [4, "Una cadena", -15, 3.14, "Otra cadena"] # Python acepta una lista con distintos tipos de dato.
 
