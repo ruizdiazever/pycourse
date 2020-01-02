@@ -28,11 +28,10 @@ while e <= 5:
         continue # Esto rompe esta iteracion y salta a la otra
     print("e vale", e)
 else:
-    print("Se ha completaeo toea la iteracion y e vale", e, "\n")
+    print("Se ha completado toda la iteracion y e vale", e, "\n")
 
 # EJEMPLO 4
 print("EJEMPLO 4")
-
 print("Bienvenido al menu interactivo")
 while(True):
     print("""¿Que quiere hacer? Escribe una opcion
