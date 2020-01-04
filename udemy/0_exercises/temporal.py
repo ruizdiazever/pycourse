@@ -1,10 +1,11 @@
-# 2) Realiza un programa que lea un número impar por teclado. Si el usuario no introduce un número impar, 
-# debe repetise el proceso hasta que lo introduzca correctamente.
+lista = []
+suma = 0
 
-impar = int(input("Ingrese un numero impar: "))
+for i in range(0, 101, 1):
+    if i % 2 == 0:
+        lista.append(i)
+print(lista)
 
-while impar % 2 == 0:
-    print("Numero par, introduzca nuevamente.")
-    impar = int(input("Ingrese un numero impar: "))
-else:
-    print("Numero impar ingresado correctamente.")
+for i in lista:
+    suma += i
+    print(suma)
