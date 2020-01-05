@@ -58,4 +58,56 @@ while len(lista) < num:
     lista.append(num_2)
 print(lista)
 suma=sum(lista)
-print(suma)
+promedio=suma/num
+print("El promedio es: ", promedio)
+
+
+# 5) Realiza un programa que pida al usuario un número entero del 0 al 9, y que mientras el número no sea correcto se repita el proceso. Luego debe comprobar si el número se encuentra en la lista de números y notificarlo:
+#       Consejo: La sintaxis "valor in lista" permite comprobar fácilmente si un valor se encuentra en una lista (devuelve True o False)
+#       numeros = [1, 3, 6, 9]
+num = int(input("Introduzca un numero del 0 al 9: "))
+numeros = [1, 3, 6, 9]
+
+while num > 9 or num < 0:
+    print("Numero incorrecto, introduzca nuevamente: ")
+    num = int(input("Introduzca un numero del 0 al 9: "))
+
+if (num in numeros) == True:
+    print("Positivo")
+else:
+    print("Negativo")
+
+
+# 6) Utilizando la función range() y la conversión a listas genera las siguientes listas dinámicamente:
+#    Todos los números del 0 al 10 0, 1, 2, ..., 10
+#    Todos los números del -10 al 0 -10, -9, -8, ..., 0
+#    Todos los números pares del 0 al 20 0, 2, 4, ..., 20
+#    Todos los números impares entre -20 y 0 -19, -17, -15, ..., -1
+#    Todos los números múltiples de 5 del 0 al 50 0, 5, 10, ..., 50
+#    Pista: Utiliza el tercer parámetro de la función range(inicio, fin, salto).
+# 1
+for num_1 in range(0,11,1):
+    print(num_1)
+# 2
+for num_2 in range(-10,1,1):
+    print(num_2)
+# 3
+for num_3 in range(0,21,2):
+    print(num_3)
+# 4
+for num_4 in range(-19,1,2):
+    print(num_4)
+# 5
+for num_5 in range(0,51,5):
+    print(num_5)
+
+
+# 7) Dadas dos listas, debes generar una tercera con todos los elementos que se repitan en ellas, pero no debe repetirse ningún elemento en la nueva lista:
+list_1 = [0,1,2,3,4,5]
+list_2 = [5,0,2,10,45]
+list_3 = []
+
+for num in list_1:
+    if (num in list_1) == (num in list_2):
+        list_3.append(num)
+print(list_3)
