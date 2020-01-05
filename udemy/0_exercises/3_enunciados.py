@@ -6,17 +6,17 @@
 num_1 = float(input("1. Introduzca un numero: "))
 num_2 = float(input("2. Introduzca un numero: "))
 
-option = int(input("""Introduzca una opcion:
+option = input("""\nOpciones:
 1. Suma.
 2. Resta
-3. Multiplicacion.
-Ingrese: """))
+3. Multiplicacion.\n
+Ingrese una opcion: """)
 
-if option == 1:
+if option == "1":
     print("Suma: ",num_1+num_2)
-elif option == 2:
+elif option == "2":
     print("Resta: ",num_1-num_2)
-elif option == 3:
+elif option == "3":
     print("Multiplicacion: ",num_1*num_2)
 else:
     print("Opcion invalida, ingrese nuevamente.")
@@ -38,21 +38,27 @@ else:
 #       Sugerencia: Puedes utilizar la funciones sum() y range() para hacerlo más fácil. 
 #       El tercer parámetro en la función range(inicio, fin, salto) indica un salto de números, pruébalo.
 lista = []
-
 for i in range(0, 101, 1):
     if i % 2 == 0:
         lista.append(i)
 print(lista)
-
 suma = sum(lista)
 print(suma)
+# Alternativa 
+suma = sum(range(0,101,2))
+# Alternativa 2
+num = 0
+suma = 0
+while num <= 100:
+    if num % 2 == 0:
+        suma += num
+    num += 1
 
 
 
 # 4) Realiza un programa que pida al usuario cuantos números quiere introducir. Luego lee todos los números y realiza una media aritmética:
 num = int(input("Introduzca la cantidad numeros que va a sacar el promedio: "))
 lista = []
-
 while len(lista) < num:
     num_2 = int(input("Introduzca un numero: "))
     lista.append(num_2)
@@ -60,6 +66,13 @@ print(lista)
 suma=sum(lista)
 promedio=suma/num
 print("El promedio es: ", promedio)
+
+# Alternativa
+repeticiones = int(input("Cuantos numeros quiere introducir?"))
+suma = 0
+for x in range(repeticiones):
+    suma += float(input("Introduce un numero: "))
+print("Se han introducido", repeticiones, "numeros que en total han sumado", suma,"y la media es",suma/repeticiones)
 
 
 # 5) Realiza un programa que pida al usuario un número entero del 0 al 9, y que mientras el número no sea correcto se repita el proceso. Luego debe comprobar si el número se encuentra en la lista de números y notificarlo:
@@ -77,6 +90,18 @@ if (num in numeros) == True:
 else:
     print("Negativo")
 
+# Alternativa
+numeros = [1, 3, 6, 9]
+
+while True:
+    numero = int(input("Escribe un numero del 0 al 9: "))
+    if numero >= 0 and numero <= 9:
+        break
+if numero in numeros:
+    print("El numero", numero, "se encuentra en la lista", numeros)
+else:
+    print("El numero", numero, "NO se encuentra en la lista", numeros)
+
 
 # 6) Utilizando la función range() y la conversión a listas genera las siguientes listas dinámicamente:
 #    Todos los números del 0 al 10 0, 1, 2, ..., 10
@@ -88,6 +113,8 @@ else:
 # 1
 for num_1 in range(0,11,1):
     print(num_1)
+# Alternativa
+print(list(range(0,11,1)))
 # 2
 for num_2 in range(-10,1,1):
     print(num_2)
@@ -111,3 +138,10 @@ for num in list_1:
     if (num in list_1) == (num in list_2):
         list_3.append(num)
 print(list_3)
+
+# Alternativa
+for letra in list_1:
+    if letra in list_2 and letra not in list_3:
+        list_3.append(letra)
+print(list_3)
+    
