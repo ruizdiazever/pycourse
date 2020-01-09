@@ -36,3 +36,7 @@
 
 # .add
 #       agrega un elemento dentro de conjunto, ejemplo: conjunto.add(1)
+
+# Metodo .items es para mostrar clave valor de un diccionario
+#       for clave, valor in edades.items():
+#           print(clave,valor)
