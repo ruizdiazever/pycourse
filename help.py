@@ -40,3 +40,6 @@
 # Metodo .items es para mostrar clave valor de un diccionario
 #       for clave, valor in edades.items():
 #           print(clave,valor)
+
+# conjunto.discard('elemento')
+#       con este metodo borramos un elemento de un conjunto
