@@ -17,8 +17,8 @@ else:
     monto_plus = 0
 
 # REMUNERACIONES
-antiguedad = 324.41
-presentismo = 2729.39
+antiguedad = (salario * 1) / 100
+presentismo = ((salario + antiguedad) * 8.33) / 100
 bruto = salario + antiguedad + presentismo + monto_plus_des
 
 # DESCUENTOS
@@ -31,17 +31,14 @@ descuentos = jubilacion + ley_19032 + obra_social + sec + faecys + monto_plus_de
 
 # NETO
 neto = (bruto + monto_plus) - descuentos
-
 print("\n")
 print("Monto plus: ", monto_plus)
 print("Monto plus descontado: ", monto_plus_des,"\n")
-
 print("Jubilacion: ",jubilacion)
 print("Ley 19032: ", ley_19032)
 print("Obra Social: ", obra_social)
 print("S.E.C.: ",sec)
 print("F.A.E.C.Y.S.: ", faecys, "\n")
-
 print("Descuentos: ",descuentos)
 print("Su sueldo bruto es: ",bruto)
 print("Su salario neto es:", neto, "\n")
