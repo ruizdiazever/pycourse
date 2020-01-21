@@ -8,6 +8,6 @@ print("{:^20.1}".format("Hola mundo"))
 #   150 → Formateo a 5 números enteros rellenados con ceros
 print("{:05d}".format(150))
 #   7887 → Formateo a 7 números enteros rellenados con espacios
-print("{:07d}".format(7887))
+print("{:7d}".format(7887))
 #   20.02 → Formateo a 3 números enteros y 3 números decimales
 print("{:07.3f}".format(20.02))

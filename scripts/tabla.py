@@ -16,8 +16,10 @@ num_2 = int(sys.argv[2])
 if len(sys.argv) == 3:
     if (num_1 >= 1 and num_1 <= 9) and (num_2 >= 1 and num_2 <= 9):
         for i in range(num_1):
-            print("\n")
-            print(" * ", end='')
+            #print("\n")
+            #print(" * ", end='')
+            # Alternatica
+            print("")
             for x in range(num_2):
                 print(" * ", end='')
     else:
