@@ -1,27 +1,30 @@
-# Para usar las funciones fuera del programa..
+# Para usar las funciones fuera del programa.. hay que retonar valores?
 
 # EJEMPLO 1
 def test():
     return "Una cadena retornada"
     # En return se deja de ejecutar la funcion.
-print(test())
+print("EJEMPLO 1: ",test(),"\n")
 
 # EJEMPLO 2
 c = test()
-print(c)
+print("EJEMPLO 2: ",c,"\n")
 
 # EJEMPLO 3
+print("EJEMPLO 3: ")
 def test_2():
     return [1,2,3,4,5]
 print (test_2())
-print (test_2()[-1]) # Slicing del ultimo elemento
+print (test_2()[-1],"\n") # Slicing del ultimo elemento
 
 # EJEMPLO 4
+print("EJEMPLO 4: ")
 print(test_2()[1:4])
 l = test_2()
-print(l[1:4])
+print(l[1:4],"\n")
 
 # EJEMPLO 5
+print("EJEMPLO 5: ")
 def test_3():
     return "Una cadena", 20, [1,2,3]
 print(test_3()) # Esto devuelve una tupla
