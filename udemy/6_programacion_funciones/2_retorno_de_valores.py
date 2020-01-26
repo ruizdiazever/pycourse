@@ -18,7 +18,7 @@ print (test_2())
 print (test_2()[-1],"\n") # Slicing del ultimo elemento
 
 # EJEMPLO 4
-print("EJEMPLO 4: ")
+print("EJEMPLO 4: ") 
 print(test_2()[1:4])
 l = test_2()
 print(l[1:4],"\n")
