@@ -21,12 +21,20 @@ for numero in numeros:
     indice += 1
 print(numeros)
 
-# EJEMPLO 4 IMPORTANTE
+# EJEMPLO 4 IMPORTANTE! ENUMERATE
 print("EJEMPLO 4")
 numeros = [1,2,3,4,5,6,7,8,9,10]
-for indice, numero in enumerate(numeros):
+for indice, numero in enumerate(numeros): # enumerate tiene que recibir algo para iterar como argumento
+    # indice es la posicion, numero es el valor
     numeros[indice] *= 10
 print(numeros)
+
+# EJEMPLO 4: ENUMERATE
+lista = [5,5,10,500]
+
+for posicion, numero in enumerate(lista):
+    lista[posicion] *= 10
+    print("En la posicion {} el numero obtenido es {}".format(posicion,lista[posicion]))
 
 # EJEMPLO 5
 print("EJEMPLO 5")
