@@ -4,7 +4,6 @@ def indeterminados_posicion(*args): # Parametro iterable
     print(args)
     for arg in args:
         print(arg)
-
 indeterminados_posicion(5, "Hola", [1,5,3,10]) # Devuelve tupla
 
 
