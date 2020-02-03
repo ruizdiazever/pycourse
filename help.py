@@ -43,3 +43,6 @@
 
 # conjunto.discard('elemento')
 #       con este metodo borramos un elemento de un conjunto
+
+# .sort()
+#       con este metodo ordenamos una lista.
