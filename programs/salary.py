@@ -1,20 +1,31 @@
 # REMUNERACION ASIGNADA
-print("\n")
-salario = float(input("Ingrese su salario: "))
-
-# PLUS
-monto_plus_des = 0
-plus = input("Posee algun plus? ")
-if (plus == "si") or (plus == "Si") or (plus == "SI"):
-    monto_plus = float(input("Ingrese el monto del plus: "))
-    # EXENTO
-    plus = input("El plus esta exenta de descuentos? ")
-    if (plus == "si") or (plus == "Si") or (plus == "SI"):
-        monto_plus = monto_plus
+print("\nBienvenido")
+while(True):
+    try:
+        salario = float(input("Ingrese su salario: "))
+        # PLUS
+        monto_plus_des = 0
+        plus = input("Posee algun plus? ")
+        if (plus == "si") or (plus == "Si") or (plus == "SI"):
+            monto_plus = float(input("Ingrese el monto del plus: "))
+            # EXENTO
+            plus = input("El plus esta exenta de descuentos? ")
+            if (plus == "si") or (plus == "Si") or (plus == "SI"):
+                monto_plus = monto_plus
+            else:
+                monto_plus_des = monto_plus 
+        else:
+            monto_plus = 0
+    except ValueError:
+        print("Error! Ha introducido una cadena de texto.")
+    except Exception as e:
+        print(type(e).__name__)
     else:
-        monto_plus_des = monto_plus 
-else:
-    monto_plus = 0
+        print("Ingresado correctamente.")
+        break
+
+
+
 
 # REMUNERACIONES
 antiguedad = (salario * 1) / 100
