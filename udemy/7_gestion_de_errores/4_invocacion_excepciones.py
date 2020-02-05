@@ -1,3 +1,6 @@
+# La instrucción raise
+# Gracias a raise podemos lanzar un error manual pasándole el identificador. 
+# Luego simplemente podemos añadir un except para tratar esta excepción que hemos lanzado:
 def mi_funcion(algo=None):
     try:
         if algo == None:
