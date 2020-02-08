@@ -73,4 +73,5 @@ def agregar_una_vez(lista,elemento):
     except ValueError:
         print("Imposible añadir elementos duplicados =>",elemento)
 
+agregar_una_vez(elementos,5)
 agregar_una_vez(elementos,10)
