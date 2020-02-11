@@ -6,6 +6,11 @@
 # PALABRA RESERVADA self
 #   Hace referencia al propio objeto.
 #   Sirve para diferenciar entre el ambito de clase y objeto.
+#   La palabra self se utiliza dentro de las clases para diferenciar los atributos y métodos de clase del ámbito de sus métodos internos.
+
+
+
+
 
 
 # SEPARADOR
