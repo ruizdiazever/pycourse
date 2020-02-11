@@ -1,11 +1,11 @@
-""" # EJEMPLO 1: atributos y metodos privados van con __
+# EJEMPLO 1: atributos y metodos privados van con __
 class Ejemplo:
     __atributo_privado = "Soy un atributo inalcanzable desde fuera."
     def __metodo_privado(self):
         print("Soy un metodo inalcanzable desde fuera")
 e = Ejemplo()
 e.__atributo_privado # AttributeError: 'Ejemplo' object has no attribute '__atributo_privado' 
-e.__metodo_privado # AttributeError: 'Ejemplo' object has no attribute '__atributo_privado'  """
+e.__metodo_privado # AttributeError: 'Ejemplo' object has no attribute '__atributo_privado' 
 
 
 # EJEMPLO 2: acceder al metodo privado con un metodo publico
