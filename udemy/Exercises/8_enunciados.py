@@ -1,5 +1,7 @@
 import math
 
+# Ejercicio en https://docs.hektorprofe.net/python/programacion-orientada-a-objetos/ejercicios/
+
 class Punto:
     # Constructor
     def __init__(self,x=0,y=0):
