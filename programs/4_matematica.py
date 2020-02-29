@@ -4,7 +4,7 @@ class Matematica:
     def suma(self, num_1, num_2):
         self.num_1 = num_1
         self.num_2 = num_2
-        print("La suma de ambos numeros es:",num_1+num_2)
+        print("\nLa suma de ambos numeros es:",num_1+num_2)
     def resta(self, num_1, num_2):
         self.num_1 = num_1
         self.num_2 = num_2
