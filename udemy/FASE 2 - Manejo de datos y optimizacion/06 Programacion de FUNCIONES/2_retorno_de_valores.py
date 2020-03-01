@@ -1,4 +1,6 @@
 # Para usar las funciones fuera del programa.. hay que retonar valores?
+# Para comunicarse con el exterior, las funciones pueden devolver valores al proceso principal gracias a la instrucción return.
+# En el momento de devolver un valor, la ejecución de la función finalizará
 
 # EJEMPLO 1
 def test():

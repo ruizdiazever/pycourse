@@ -19,7 +19,7 @@ print(int('0xa',16)) # Hexadecimal en base 16
 print(abs(55))
 print(abs(-70))
 
-# REDONDEAR
+# REDONDEAR, redondeo de un flotante a entero, menor de .5 a la baja, mayor o igual a .5 al alza
 print(round(5.5))
 
 # EVALUAR UNA EXPRESION EN CADENA
@@ -31,5 +31,5 @@ print(eval('num*10 - 5'))
 print(len("Hola programador"))
 print(len([]))
 
-# HELP!
+# HELP! Invocar el menú de ayuda del intérprete de Python
 print(help())

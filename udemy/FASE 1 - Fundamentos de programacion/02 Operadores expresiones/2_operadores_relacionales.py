@@ -1,3 +1,9 @@
+#   Sirven para comparar dos valores, dependiendo del resultado de la comparación pueden devolver:
+#       Verdadero (True), si es cierta
+#       Falso (False), si no es cierta
+#       La representación aritmética de True y False equivale a 1 y 0 respectivamente
+
+
 # Igual que
 3 == 2
 

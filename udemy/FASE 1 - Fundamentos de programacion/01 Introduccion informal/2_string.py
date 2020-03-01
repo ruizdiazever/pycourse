@@ -27,7 +27,7 @@ print("Un texto\nNueva linea", "\n") # Salto de linea
 
 print("PARTE 4: ")
 print("C:\nombre\directorio")
-print(r"C:\nombre\directorio", "\n") # Usando RAW mostramos en crudo
+print(r"C:\nombre\directorio", "\n") # Usando RAW 'r' mostramos en crudo
 
 
 print("PARTE 5: ")

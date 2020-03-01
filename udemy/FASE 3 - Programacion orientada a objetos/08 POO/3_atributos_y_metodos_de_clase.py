@@ -1,7 +1,11 @@
+# Atributos: Hacen referencia a las variables internas de la clase.
+# Métodos: Hacen referencia a las funciones internas de la clase.
+
 # METODO __init__
 #   Es una funcion interna de la clase. Metodo es una funcion dentro de una clase.
 #   Es un metodo especial para se ejecuta al crear un objeto.
 #   Permite ademas enviar argumentos durante la instanciacion.
+#   Parámetros en el init (argumentos al instanciar)
 
 # PALABRA RESERVADA self
 #   Hace referencia al propio objeto.

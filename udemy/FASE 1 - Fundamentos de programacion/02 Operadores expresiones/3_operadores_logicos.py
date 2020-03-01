@@ -3,7 +3,7 @@ print("1.1:",not True)
 print("1.2:",not True == False, "\n")
 
 # Ejemplo 2
-# CONJUNCION(AND): viene del conjunto, sinonimo de unido, contiguo o cercano, agruna uniendo.
+# CONJUNCION(AND): viene del conjunto, sinonimo de unido, contiguo o cercano, agrupa uniendo.
 # DINYUNCION(OR): viene de disyunto, sinonimo de separado, apartado o distante, agrupa separando.
 print("2.1:", True and True)
 print("2.2:", True and False) # Lo mismo alreves

@@ -8,7 +8,7 @@ otra_galleta = Galleta()
 def terminator():
     pass
 
-print(type(una_galleta))
+print(type(una_galleta)) # type es para determinar la clase de un objeto..
 print(type(10))
 print(type(8/3))
 print(type("Hola"))

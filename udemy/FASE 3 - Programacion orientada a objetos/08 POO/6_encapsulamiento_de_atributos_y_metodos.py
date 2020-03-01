@@ -1,3 +1,6 @@
+# Consiste en denegar el acceso a los atributos y métodos internos de la clase desde el exterior.
+# En Python no existe, pero se puede simular precediendo atributos y métodos con dos barras bajas __:
+
 # EJEMPLO 1: atributos y metodos privados van con __
 class Ejemplo:
     __atributo_privado = "Soy un atributo inalcanzable desde fuera."
@@ -9,6 +12,7 @@ e.__metodo_privado # AttributeError: 'Ejemplo' object has no attribute '__atribu
 
 
 # EJEMPLO 2: acceder al metodo privado con un metodo publico
+# Internamente la clase sí puede acceder a sus atributos y métodos encapsulados, el truco consiste en crear sus equivalentes "publicos":
 class Ejemplo_2:
     __atributo_privado = "Soy un atributo inalcanzable desde fuera."
 
