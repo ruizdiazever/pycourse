@@ -40,7 +40,6 @@ auto.descripcion = "Automovil con conduccion autonoma nivel 5, unica en su clase
 auto.marca = "Tesla"
 auto.modelo = "Cybertruck"
 auto.material = "Aluminio endurecida en frio"
-print(auto)
 
 
 # Class Avion heredada de superclase Vehiculo
@@ -68,4 +67,15 @@ avion.altura_vuelo = "15 KM"
 avion.fabricante = "Airbus"
 avion.modelo = "A380"
 avion.desplazamiento = "Aereo"
-print(avion)
+
+# Iteramos todos los objetos
+vehiculos = [auto, avion]
+for vehiculo in vehiculos:
+    print("1. Tipo: ",vehiculo.tipo)
+
+# Iteramos segun caracteristicas
+for vehiculo in vehiculos:
+    if (isinstance(vehiculo, Avion)):
+        print("2. Desplazamiento: ",vehiculo.desplazamiento)
+    elif (isinstance(vehiculo, Auto)):
+        print("3. Marca: ",vehiculo.marca)

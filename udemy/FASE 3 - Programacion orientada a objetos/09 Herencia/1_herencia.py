@@ -94,5 +94,5 @@ AUTOR:        {}
 
 li = Libro(2077,"La Fundacion",5,"Saga emblematica de la ciencia ficcion.")
 li.isbn = "978-987-566-112-7"
-li.autor = "Isac Asimov"
+li.autor = "Isaac Asimov"
 print(li)
