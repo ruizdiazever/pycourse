@@ -1,6 +1,6 @@
 # Hasta ahora sabemos que una clase heredada puede fácilmente extender algunas funcionalidades, simplemente añadiendo nuevos atributos y métodos, o sobreescribiendo los ya existentes. 
 # Como en el siguiente ejemplo:
-print("EJEMPLO 3:")
+print("EJEMPLO 1:")
 class Vehiculo():
     def __init__(self, color, ruedas):
         self.color = color
@@ -40,7 +40,7 @@ class Coche_2(Vehiculo_2):
         self.velocidad = velocidad
         self.cilindrada = cilindrada
     def __str__(self):
-        return "Color {}, {} km/h, {} ruedas, {} cc".format(self.color, self.velocidad, self.ruedas, self.cilindrada)
+        return Vehiculo_2.__str__(self) + ", {} km/h, {} cc".format(self.velocidad, self.cilindrada)
 
 c_2 = Coche_2("rojo",4,350,1500)
 print(c_2)
@@ -61,7 +61,7 @@ print(v)
 
 class Coche_3(Vehiculo_3):
     def __init__(self, color, ruedas, velocidad, cilindrada):
-        super().__init__(color, ruedas)
+        super().__init__(color, ruedas) # Utilizamos 'super()' sin self
         self.velocidad = velocidad
         self.cilindrada = cilindrada
     def __str__(self):
