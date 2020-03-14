@@ -5,3 +5,10 @@ if (n % 2) == 0:
 else:
     print (n, "es un numero impar.")
 
+
+from tkinter import *
+
+apl = Tk()
+texto = Label(apl, text="Hola Mundo!")
+texto.pack()
+apl.mainloop()
