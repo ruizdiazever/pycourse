@@ -14,7 +14,7 @@ print("Ejemplo: ", lista)
 def modificar(lista):
     lista = set(lista) # Borramos los elementos duplicados
     lista = list(lista) # Convertimos el conjunto en lista
-    lista.sort() # Ordenamos la lista
+    lista.sort(reverse=True) # Ordenamos la lista de menor a mayor
     # Eliminamos todos los numeros impares
     lista_2 = []
     for i in lista:
