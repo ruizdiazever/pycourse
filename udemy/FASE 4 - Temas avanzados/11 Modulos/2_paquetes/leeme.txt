@@ -1,0 +1,7 @@
+1-  '__pycache__' se crea automaticamente
+
+2-  '__init__.py' este archivo le indica a Python que la carpeta es un paquete. Debera interpretar la jerarquia de modulos.
+
+3-  Los subpaquetes 'hola','adios' tambien deben contener '__init__.py' para que Python los interprete como subpaquetes..
+
+4-  'script.py' es nuestra app de prueba..
