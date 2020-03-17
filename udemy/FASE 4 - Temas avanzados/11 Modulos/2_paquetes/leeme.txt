@@ -5,3 +5,5 @@
 3-  Los subpaquetes 'hola','adios' tambien deben contener '__init__.py' para que Python los interprete como subpaquetes..
 
 4-  'script.py' es nuestra app de prueba..
+
+5-  'setup.py' es para crear un paquete distribuible
