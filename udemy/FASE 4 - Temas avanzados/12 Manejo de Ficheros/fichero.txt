@@ -1,4 +1,0 @@
-Una linea con texto
-Otra linea de texto
-Hola Ever
-Cuarta linea del fichero

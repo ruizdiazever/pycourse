@@ -40,7 +40,8 @@ fichero.close()
 
 # En cambio en modo append si funciona
 # Lo crea vacio
-fichero = open('fichero_inexistente.txt', 'a')
+#fichero = open('fichero_test.txt', 'a') # En caso de irregularidades activar esta linea y comentar la siguiente
+fichero = open('fichero.txt', 'a')
 print(fichero)
 
 
