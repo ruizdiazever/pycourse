@@ -5,14 +5,14 @@ The most complete and comprehensive Spanish course on Python 3 at Udemy. Perfect
 
 Divided into four phases with 130+ lessons including presentations, notes, step-by-step exercises and quizzes:
 
-1. Programming fundamentals
-2. Optimization and data management
-3. Object Oriented Programming
-4. Advanced topics (see the program to know more)
-5. Many lessons are taught with real examples and exercises from the teacher's own experience as a programmer, rather than simple theoretical examples.
+>- 1. Programming fundamentals
+>- 2. Optimization and data management
+>- 3. Object Oriented Programming
+>- 4. Advanced topics (see the program to know more)
+>- 5. Many lessons are taught with real examples and exercises from the teacher's own experience as a programmer, rather than simple theoretical examples.
 
 
-**Section:**
+## Full detail of the content 📖
 
 * Section 1: Welcome
 * Section 2: The learning environment
@@ -36,12 +36,10 @@ Divided into four phases with 130+ lessons including presentations, notes, step-
 * Section 20: Annexes
 
 
-
-
 ## Teacher ✒️
 
 **Héctor Costa Guzmán** - *Python Developer and Teacher* - [hcosta](https://github.com/hcosta)
 
-## course website ✒️
+## Course Website 🌐
 
 **Udemy** - *Online Learning Platform* - [Python 3](https://www.udemy.com/course/python-3-al-completo-desde-cero/)
