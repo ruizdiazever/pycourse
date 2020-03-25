@@ -13,7 +13,7 @@ while(True):
             if (plus == "si") or (plus == "Si") or (plus == "SI"):
                 monto_plus = monto_plus
             else:
-                monto_plus_des = monto_plus 
+                monto_plus_des = monto_plus
         else:
             monto_plus = 0
     except ValueError:
@@ -24,14 +24,10 @@ while(True):
         print("Ingresado correctamente.")
         break
 
-
-
-
 # REMUNERACIONES
 antiguedad = (salario * 1) / 100
 presentismo = ((salario + antiguedad) * 8.33) / 100
 bruto = salario + antiguedad + presentismo + monto_plus_des
-
 # DESCUENTOS
 jubilacion = (bruto * 11) / 100
 ley_19032 = (bruto * 3) / 100
@@ -39,7 +35,6 @@ obra_social = (bruto * 3) / 100
 sec = (bruto * 2) / 100
 faecys = (bruto * 0.5) / 100
 descuentos = jubilacion + ley_19032 + obra_social + sec + faecys + monto_plus_des
-
 # NETO
 neto = (bruto + monto_plus) - descuentos
 print("\n")
