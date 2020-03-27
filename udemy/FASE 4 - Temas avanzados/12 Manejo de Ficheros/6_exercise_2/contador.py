@@ -1,5 +1,5 @@
 from io import open
-import sys
+import sys # Porque vamos a trabajar con argumentos en este script
 
 fichero = open("contador.txt", "a+")
 fichero.seek(0)
@@ -26,7 +26,7 @@ try:
 
     # Finalmente volvemos a escribir los cambios en el fichero
     fichero = open("contador.txt", "w")
-    fichero.write( str(contador) )
+    fichero.write( str(contador) ) # Tiene que ser guardado como string sino da error
     fichero.close()
 
 except:
