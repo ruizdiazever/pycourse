@@ -1,9 +1,9 @@
-# .index
-#       para buscar un elemento y saber su posicion
+*.index*
+        para buscar un elemento y saber su **POSICION**
 
 
-# len()
-#       para saber la longitud
+*len()*
+       para saber la **LONGITUD**
 
 
 # .append
