@@ -4,14 +4,14 @@
 
 Si ya existen deberá tratar la excepción y mostrar que las tablas ya existen. En caso contrario mostrará que se han creado correctamente.
 
-            CREATE TABLE categoria(
-                            id INTEGER PRIMARY KEY AUTOINCREMENT,
-                            nombre VARCHAR(100) UNIQUE NOT NULL)
-            CREATE TABLE plato(
-                            id INTEGER PRIMARY KEY AUTOINCREMENT,
-                            nombre VARCHAR(100) UNIQUE NOT NULL, 
-                            categoria_id INTEGER NOT NULL,
-                            FOREIGN KEY(categoria_id) REFERENCES categoria(id))
+        CREATE TABLE categoria(
+                        id INTEGER PRIMARY KEY AUTOINCREMENT,
+                        nombre VARCHAR(100) UNIQUE NOT NULL)
+        CREATE TABLE plato(
+                        id INTEGER PRIMARY KEY AUTOINCREMENT,
+                        nombre VARCHAR(100) UNIQUE NOT NULL, 
+                        categoria_id INTEGER NOT NULL,
+                        FOREIGN KEY(categoria_id) REFERENCES categoria(id))
 
 **Nota:** La línea FOREIGN KEY(categoria_id) REFERENCES categoria(id) indica un tipo de clave especial (foránea), por la cual se crea una relación entre la categoría de un plato con el registro de categorías.
 
