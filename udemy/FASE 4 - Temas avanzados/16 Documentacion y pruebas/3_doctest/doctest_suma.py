@@ -19,6 +19,12 @@ def suma(a, b):
 
     Sin embargo no podemos sumar elementos de tipos diferentes:
     >>> suma(10,"hola")
-    "10hola"
+    Traceback (most recent call last):
+    ...
+    TypeError: unsupported operand type(s) for +: 'int' and 'str'
     """
     return a+b
+
+if __name__ == "__main__":
+    import doctest
+    print(doctest.testmod())
