@@ -38,32 +38,37 @@ answer = "'{}' de '{}' de edad es '{}'"
 print(answer.format(nombre,old,ocupacion)) """
 
 # ALINAMIENTO Y TRUNCAMIENTO
+print("\nParte I")
 print("{:>30}".format("palabra")) # Alineamiento a la derecha en 30 caracteres.
 print("{:<30}".format("palabra")) # Alineamiento a la izquierda en 30 caracteres.
 print("{:^30}".format("palabra")) # Alineamiento al centro en 30 caracteres.
 print("{:.3}".format("palabra")) # Truncamiento a 3 caracteres.
-print("{:>30.3}".format("palabra")) # Alineamiento a la derecha en 30 caracteres con truncamiento de 3 caracteres.
-
+print("{:>10.3}".format("palabra")) # Alineamiento a la derecha en 30 caracteres con truncamiento de 3 caracteres.
 
 # FORMATEO DE NUMEROS ENTEROS, rellenados con espacios
+print("\nParte II")
 print("{:4d}".format(10)) # d hace referencia a digitos
 print("{:4d}".format(100))
 print("{:4d}".format(1000))
 
 # Rellenados con ceros
+print("\nParte III")
 print("{:04d}".format(10))
 print("{:04d}".format(100))
 print("{:04d}".format(1000))
 
 # FORMATEO DE NUMEROS FLOTANTES
+print("\nParte IV")
 print("{}".format(3.1415926))
 print("{:.2f}".format(3.1415926)) # f hace refencia a flotante
-print("{:.2f}".format(153.21)) # Lo rellena con 0
+print("{:.2f}".format(15.2)) # Lo rellena con 0
 
 # ALINEAR DECIMALES
+print("\nParte V")
 print("{:7.2f}".format(3.1415926)) # "." punto cuenta como caracter
-print("{:7.2f}".format(153.21)) # Lo rellena con 0
+print("{:10.3f}".format(153.21)) # Lo rellena con 0
 
 # RELLENAR con 0
+print("\nParte VI")
 print("{:07.2f}".format(3.1415926)) # "." punto cuenta como caracter
 print("{:07.2f}".format(153.21)) # Lo rellena con 0

@@ -11,17 +11,17 @@
 #   Hace referencia al propio objeto.
 #   Sirve para diferenciar entre el ambito de clase y objeto.
 #   La palabra self se utiliza dentro de las clases para diferenciar los atributos y métodos de clase del ámbito de sus métodos internos.
-
-
-
-
-
-
 # SEPARADOR
 def separador(num):
-    print("\n",num)
+    print("\n=================>",num, "<=================")
 
-# EXAMPLE 1
+
+
+
+
+
+
+# EXAMPLE 0
 separador(0)
 class Galleta:
     pass
@@ -30,7 +30,11 @@ una_galleta.sabor = "salado" # Atributo al objeto
 una_galleta.color = "marron"
 print("El sabor de esta galleta es",una_galleta.sabor) # Invocamos el atributo del objeto
 
-# EXAMPLE 2
+
+
+
+
+# EXAMPLE 1
 separador(1)
 class Galleta_2:
     chocolate: False
@@ -38,7 +42,11 @@ g = Galleta_2()
 g.chocolate = True
 print(g.chocolate)
 
-# EXAMPLE 3
+
+
+
+
+# EXAMPLE 2
 separador(2)
 class Galleta_3:
     chocolate = False
@@ -46,7 +54,11 @@ class Galleta_3:
         print("Se acaba de crear una galleta n°3")
 g2 = Galleta_3()
 
-# EXAMPLE 4
+
+
+
+
+# EXAMPLE 3
 separador(3)
 class Galleta_4:
     chocolate = False
@@ -64,6 +76,11 @@ g4.tiene_chocolate()
 g4.chocolatear()
 g4.tiene_chocolate()
 
+
+
+
+
+
 # EXAMPLE 4
 separador(4)
 class Galleta_5:
@@ -80,6 +97,9 @@ class Galleta_5:
         else:
             print("Soy una galleta sin chocolate :(")
 g5 = Galleta_5("salada","redonda")
+
+
+
 
 # EXAMPLE 5: agregamos un valor por defecto en los parametros.
 separador(5)
