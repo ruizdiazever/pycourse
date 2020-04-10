@@ -6,20 +6,18 @@ class Producto:
         self.pvp = pvp
         self.descripcion = descripcion
     def __str__(self):
-        # Con diagonal le indicanos que no comience con espacio.
-        # Dejando lo demas a la izquierda indicamos la posicion.
-        return """\
-Referencia:     {}
-Nombre:         {}
-PVP:            {}
-Descripcion:    {}
-""".format(self.referencia,self.nombre,self.pvp,self.descripcion)
+        return f"""\
+Referencia:     {self.referencia}
+Nombre:         {self.nombre}
+PVP:            {self.pvp}
+Descripcion:    {self.descripcion}"""
 
 
 
 # SUBCLASE
 class Adorno(Producto):
     pass
+
 adorno = Adorno(2034, "Vaso adornado", 15, "Vaso de porcelana")
 
 
@@ -30,14 +28,13 @@ class Alimento(Producto):
     distribuidor = ""
 
     def __str__(self):
-        return """\
-Referencia:     {}
-Nombre          {}
-PVP:            {}
-Descripcion:    {}
-Productor:      {}
-Distribuidor:   {}
-""".format(self.referencia,self.nombre,self.pvp,self.descripcion,self.productor,self.distribuidor)
+        return f"""\
+Referencia:     {self.referencia}
+Nombre          {self.nombre}
+PVP:            {self.pvp}
+Descripcion:    {self.descripcion}
+Productor:      {self.productor}
+Distribuidor:   {self.distribuidor}"""
 
 
 # SUBCLASE
@@ -46,14 +43,13 @@ class Libro(Producto):
     autor = ""
 
     def __str__(self):
-        return """\
-Referencia:     {}
-Nombre          {}
-PVP:            {}
-Descripcion:    {}
-Productor:      {}
-Distribuidor:   {}
-""".format(self.referencia,self.nombre,self.pvp,self.descripcion,self.isbn,self.autor)
+        return f"""\
+Referencia:     {self.referencia}
+Nombre          {self.nombre}
+PVP:            {self.pvp}
+Descripcion:    {self.descripcion}
+Productor:      {self.isbn}
+Distribuidor:   {self.autor}"""
 
 
 
@@ -62,6 +58,8 @@ Distribuidor:   {}
 alimento = Alimento(2077,"Avena integral",5,"Avena integral para cocinar o usar como harina")
 alimento.productor = "Ever Molinos S.A."
 alimento.distribuidor = "Ever Robotic S.A."
+
+
 # LIBRO
 libro = Libro(2036, "La Fundacion",9, "Clasico de la ciencia ficcion")
 libro.isbn = "978-987-566-112-7"
@@ -70,22 +68,26 @@ libro.autor = "Isaac Asimov"
 
 
 # TRABAJANDO EN CONJUNTO
+# Gracias a la flexibilidad de Python podemos manejar objetos de distintas clases masivamente de una forma muy simple.
+# Vamos a empezar creando una lista con nuestros tres productos de subclases distintas:
 print("TRABAJANDO EN CONJUNTO: \n")
-    # Gracias a la flexibilidad de Python podemos manejar objetos de distintas clases masivamente de una forma muy simple.
-    # Vamos a empezar creando una lista con nuestros tres productos de subclases distintas:
+
 
 productos = [adorno, alimento]
 productos.append(libro)
+
 
 # Ahora si queremos recorrer todos los productos de la lista podemos usar un bucle for:
 print("Recorremos todos los productos: ")
 for producto in productos:
     print(producto, "\n")
 
+
 # También podemos acceder a los atributos, siempre que sean compartidos entre todos los objetos:
 print("Accedemos a los atributos, que son compartidos en todos los objetos:")
 for producto in productos:
     print(producto.referencia, producto.nombre)
+
 
 # Si un objeto no tiene el atributo al que queremos acceder nos dará error, ejemplo:
 #for producto in productos:

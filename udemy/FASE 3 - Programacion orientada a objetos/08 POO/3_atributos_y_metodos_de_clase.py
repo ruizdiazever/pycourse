@@ -121,3 +121,6 @@ class Galleta_6:
             print("Soy una galleta sin chocolate :(")
 g6 = Galleta_6()
 g6 = Galleta_6("exquisita","grande")
+
+g6.chocolatear()
+g6.tiene_chocolate()

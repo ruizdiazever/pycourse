@@ -24,6 +24,7 @@ class Ejemplo_2:
 
     def metodo_publico(self):
         return self.__metodo_privado()
+        
 e_2 = Ejemplo_2()
 e_2.atributo_publico()
 e_2.metodo_publico()

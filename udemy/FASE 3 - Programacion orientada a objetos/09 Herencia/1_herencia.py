@@ -38,12 +38,11 @@ class Producto:
     def __str__(self):
         # Con diagonal le indicanos que no comience con espacio.
         # Dejando lo demas a la izquierda indicamos la posicion.
-        return """\
-REFERENCIA:   {}
-NOMBRE:       {}
-PVP:          {}
-DESCRIPCION:  {}
-        """.format(self.referencia,self.nombre,self.pvp,self.descripcion)
+        return f"""\
+REFERENCIA:   {self.referencia}
+NOMBRE:       {self.nombre}
+PVP:          {self.pvp}
+DESCRIPCION:  {self.descripcion}"""
 
 
 
@@ -63,18 +62,18 @@ class Alimento(Producto):
     distribuidor = ""
 
     def __str__(self):
-        return """\
-REFERENCIA:   {}
-NOMBRE:       {}
-PVP:          {}
-DESCRIPCION:  {}
-PRODUCTOR:    {}
-DISTRIBUIDOR: {}
-        """.format(self.referencia,self.nombre,self.pvp,self.descripcion,self.productor,self.distribuidor)
+        return f"""\
+REFERENCIA:   {self.referencia}
+NOMBRE:       {self.nombre}
+PVP:          {self.pvp}
+DESCRIPCION:  {self.descripcion}
+PRODUCTOR:    {self.productor}
+DISTRIBUIDOR: {self.distribuidor}"""
 
 al = Alimento(2035,"Leche descremada",5,"250ml en envase de vidrio.")
 al.productor = "La Serenisima"
 al.distribuidor = "Logistica Tesla SA"
+print("======================================================")
 print(al)
 
 # 4. SUBCLASE CON ATRIBUTOS NUEVOS, con asignacion externa.
@@ -83,16 +82,16 @@ class Libro(Producto):
     autor = ""
 
     def __str__(self):
-        return """\
-REFERENCIA:   {}
-NOMBRE:       {}
-PVP:          {}
-DESCRIPCION:  {}
-ISBN:         {}
-AUTOR:        {}
-        """.format(self.referencia,self.nombre,self.pvp,self.descripcion,self.isbn,self.autor)
+        return f"""\
+REFERENCIA:   {self.referencia}
+NOMBRE:       {self.nombre}
+PVP:          {self.pvp}
+DESCRIPCION:  {self.descripcion}
+ISBN:         {self.isbn}
+AUTOR:        {self.autor}"""
 
 li = Libro(2077,"La Fundacion",5,"Saga emblematica de la ciencia ficcion.")
 li.isbn = "978-987-566-112-7"
 li.autor = "Isaac Asimov"
+print("======================================================")
 print(li)
