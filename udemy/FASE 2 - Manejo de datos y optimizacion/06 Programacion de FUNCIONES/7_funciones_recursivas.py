@@ -27,3 +27,10 @@ def factorial(num):
         print("Valor final ->", num)
     return num
 print(factorial(5))
+
+"""
+1! = 1
+2! = 2(1) = 2
+3! = 3(2)(1) = 6
+4! = 4(3)(2)(1) = 24
+5! = 5(4)(3)(2)(1) = 120 """

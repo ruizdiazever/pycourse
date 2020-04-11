@@ -1,16 +1,16 @@
-# https://docs.hektorprofe.net/python/funcionalidades-avanzadas/expresiones-regulares/
+""" https://docs.hektorprofe.net/python/funcionalidades-avanzadas/expresiones-regulares/
 
-# Una de las tareas más utilizadas en la programación es la búsqueda de subcadenas o 
-# patrones dentro de otras cadenas de texto.
+Una de las tareas más utilizadas en la programación es la búsqueda de subcadenas o 
+patrones dentro de otras cadenas de texto.
 
-# Las expresiones regulares, también conocidas como 
-#       'regex' o 'regexp'
-# son patrones de búsqueda definidos con una sintaxis formal. Siempre que sigamos sus reglas, 
-# podremos realizar búsquedas simples y avanzadas, que utilizadas en conjunto con 
-# otras funcionalidades, las vuelven una de las opciones más útiles e importantes 
-# de cualquier lenguaje.
+Las expresiones regulares, también conocidas como 
+    'regex' o 'regexp'
+son patrones de búsqueda definidos con una sintaxis formal. Siempre que sigamos sus 
+reglas, podremos realizar búsquedas simples y avanzadas, que utilizadas en conjunto 
+con otras funcionalidades, las vuelven una de las opciones más útiles e importantes 
+de cualquier lenguaje. """
 
-import re # importamos el modulo
+import re
 
 texto = "En esta cadena se encuentra una palabra magica"
 

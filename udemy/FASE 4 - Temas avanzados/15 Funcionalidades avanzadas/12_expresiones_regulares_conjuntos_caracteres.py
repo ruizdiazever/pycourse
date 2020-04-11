@@ -99,7 +99,8 @@ buscar(patrones, texto)
 
 
 """ Documentación
-Hay docenas y docenas de códigos especiales, si queréis echar un vistazo a todos ellos podéis consultar la documentación oficial:
+Hay docenas y docenas de códigos especiales, si queréis echar un vistazo a todos ellos podéis 
+consultar la documentación oficial:
 
 https://docs.python.org/3.5/library/re.html#regular-expression-syntax
 Un resumen por parte de Google Eduactión:

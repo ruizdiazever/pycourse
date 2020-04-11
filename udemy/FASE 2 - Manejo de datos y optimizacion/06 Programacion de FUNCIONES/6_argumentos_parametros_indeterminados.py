@@ -7,7 +7,7 @@ def indeterminados_posicion(*args): # Parametro iterable
     print(args)
     for arg in args:
         print(arg)
-indeterminados_posicion(5, "Hola", [1,5,3,10]) # Devuelve tupla
+indeterminados_posicion(5, "Hola", [1, 5, 3, 10]) # Devuelve tupla
 
 
 # POR NOMBRE: para recibir un número indeterminado de parámetros por nombre (clave-valor), debemos crear un diccionario dinámico de argumentos.
@@ -18,7 +18,7 @@ def indeterminados_nombre(**kwargs): # KEY WORDS ARGS
     for kwarg in kwargs:
         print(kwarg," ",kwargs[kwarg])
 
-indeterminados_nombre(n=5,c="Hola",l=[1,5,3,10])
+indeterminados_nombre(n=5,c="Hola",l=[1, 5, 3, 10])
 
 
 # POR POSICION Y NOMBRE A LA VEZ: si queremos aceptar ambos tipos de parámetros simultáneamente, entonces debemos crear ambas colecciones dinámicas:
@@ -31,4 +31,4 @@ def super_funcion(*args,**kwargs):
     for kwarg in kwargs:
         print(kwarg, " ", kwargs[kwarg])
         
-super_funcion(10,50,-1,1,-56,nombre="Hector",edad=27)
+super_funcion(10, 50, -1, 1, -56, nombre="Hector", edad=27)

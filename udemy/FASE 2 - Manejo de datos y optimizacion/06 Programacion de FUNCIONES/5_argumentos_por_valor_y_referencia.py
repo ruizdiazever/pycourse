@@ -19,7 +19,7 @@ print(ns,n)
 
 # EJEMPLO 2: esto ayuda a prevenir que dentro de la funcion se pueda modificar la lista
 def doblar_valores_copiado(numeros):
-    for i,n in enumerate(numeros):
+    for i, n in enumerate(numeros):
         numeros[i] *= 2
 ns = [10,50,100]
 doblar_valores_copiado(ns[:]) # esto hace que sea una copia
