@@ -6,7 +6,7 @@ class Program:
     def __init__(self, name):
         self.name = name
     
-    divider = "----------------------------------------"
+    divider = "------------------------------------------------------------------------------"
 
     def __str__(self):
         return f"{self.divider}\nHola {self.name}"
@@ -22,35 +22,23 @@ saludo.producto(8, 8)
 
 # Ejercicio 1.2
 class Geometria:
-    divider = "----------------------------------------"
+    divider = "------------------------------------------------------------------------------"
 
     def rectangulo(self, base, altura):
         self.base = base
         self.altura = altura
-        
-        print(f"""\
-Rectangulo con base {base} y altura {altura}
-Perimetro: {2 * (base + altura)}
-Area:      {base * altura}
-{self.divider}""")
-
+        print(f"Rectangulo con base {base} y altura {altura} || Perimetro: {2 * (base + altura)} || Area: {base * altura}")
+        print(f"{self.divider}")
 
     def circulo(self, radio):
         self.radio = radio
-
-        print(f"""\
-Circulo con radio {radio}
-Perimetro: {2 * math.pi * radio}
-Area:      {math.pi * (radio ** 2)}
-{self.divider}""")
+        print(f"Circulo de radio {radio} || Perimetro: {2 * math.pi * radio} || Area: {math.pi * (radio ** 2)}")
+        print(f"{self.divider}")
 
     def esfera(self, radio):
         self.radio = radio
-
-        print(f"""\
-Esfera de radio {radio}
-Volumen: {(4 * math.pi * (radio **3)) / 3}
-{self.divider}""")
+        print(f"Esfera de radio {radio} || Volumen: {(4 * math.pi * (radio **3)) / 3}")
+        print(f"{self.divider}")
         
 
 calculos = Geometria()
