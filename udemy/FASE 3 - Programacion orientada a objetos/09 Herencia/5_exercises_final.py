@@ -10,8 +10,8 @@ class Vehiculo():
         self.ruedas = ruedas
     def __str__(self):
         return "Color: {}\nRuedas: {}".format(self.color, self.ruedas)
- 
- # Subclase 'Coche', hereda de la clase 'Vehiculo'
+
+# Subclase 'Coche', hereda de la clase 'Vehiculo'
 class Coche(Vehiculo):
     def __init__(self, color, ruedas,velocidad,cilindrada):
         super().__init__(color, ruedas)

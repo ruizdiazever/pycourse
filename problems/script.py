@@ -1,4 +1,3 @@
-import pprint
 import math
 
 # Ejercicio 1.1
@@ -19,17 +18,6 @@ class Geometria:
         self.base = base
         self.altura = altura
         print(f"Rectangulo con base {base} y altura {altura} || Perimetro: {2 * (base + altura)} || Area: {base * altura}")
-
-    def rectangulo_coordenadas(self, x1, y1, x2, y2):
-        self.x1 = x1
-        self.x2 = x2
-        self.y1 = y1
-        self.y2 = y2
-
-        diagonal = math.sqrt((x2 - x1)**2 + (y2 - y1)**2)
-        print(diagonal)
-
-        print(f"x1={x1}, x2={x2}, y1={y1} y2={y2} => Area: {diagonal}")
 
     def circulo(self, radio):
         self.radio = radio
