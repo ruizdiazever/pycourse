@@ -18,7 +18,7 @@ for i in name:
 pprint.pprint(lista_3)
 
 example(3)
-# comprimir lista anterior
+# Comprimir lista anterior
 reduccion = list(map(lambda x,y: x*y, lista,name))
 print(reduccion)
 
@@ -32,9 +32,10 @@ class Persona():
     def __init__(self, name, email):
         self.name = name
         self.email = email
+        
     def __str__(self):
-        return """USER: {}
-EMAIL: {}""".format(self.name,self.email)
+        return f"""USER: {self.name}
+EMAIL: {self.email}"""
 
 p = Persona("Ever","ruizdiaz.oe@gmail.com")
 print(p)

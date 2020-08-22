@@ -14,7 +14,7 @@ y cómo se usan los objetos. Estas variables reciben el nombre de
 docstrings, cadenas de documentación. """
 separador(1)
 def hola(arg):
-    """Este es el docstring de la función"""
+    """Este es el docstring de la funcion"""
     print("Hola", arg, "!")
 hola("Ever")
 
